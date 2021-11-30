@@ -1,0 +1,9 @@
+import in.inovasi.basic.Person
+
+model{
+    Iterable<Person> personList 
+}
+
+json{
+    persons g.render(template:"person", collection: personList, var:'person')
+}
