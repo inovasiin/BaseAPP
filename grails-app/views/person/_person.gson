@@ -1,0 +1,10 @@
+import in.inovasi.basic.Person
+
+model {
+    Person person
+}
+json {
+    id person.id
+    name person.name
+    surname person.surname
+}
