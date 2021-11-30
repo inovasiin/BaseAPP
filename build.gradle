@@ -73,6 +73,10 @@ dependencies {
     testImplementation "org.seleniumhq.selenium:selenium-support:3.141.59"
     testRuntimeOnly "org.seleniumhq.selenium:selenium-chrome-driver:3.141.59"
     testRuntimeOnly "org.seleniumhq.selenium:selenium-firefox-driver:3.141.59"
+    implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.27'
+    implementation 'org.grails.plugins:spring-security-core:4.0.3'
+    implementation 'org.grails.plugins:spring-security-ui:4.0.0.M1'
+    implementation "org.grails.plugins:spring-security-rest:3.0.1"
 }
 
 bootRun {
