@@ -19,7 +19,6 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
 	[pattern: '/**/favicon.ico', access: ['permitAll']],
 	[pattern: '/api/login',     access: ['permitAll']],
     [pattern: '/api/logout',     access: ['isFullyAuthenticated()']],
-    [pattern: '/api/product',    access: ['isFullyAuthenticated()']],
     [pattern: '/**',             access: ['isFullyAuthenticated()']]
 ]
 
@@ -40,7 +39,4 @@ grails.plugin.springsecurity.rest.token.storage.jwt.secret='pleaseChangeThisSecr
 grails.plugin.springsecurity.rest.logout.endpointUrl = '/api/logout'
 grails.plugin.springsecurity.rest.token.validation.useBearerToken = false
 grails.plugin.springsecurity.rest.token.validation.headerName = 'X-Api-Token'
-grails.plugin.springsecurity.rest.token.storage.memcached.hosts = 'localhost:11211'
-grails.plugin.springsecurity.rest.token.storage.memcached.username = ''
-grails.plugin.springsecurity.rest.token.storage.memcached.password = ''
 grails.plugin.springsecurity.rest.token.storage.memcached.expiration = 86400
